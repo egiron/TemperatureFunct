@@ -3,6 +3,38 @@ site_description: Library for applying temperature response functions in crop mo
 site_author: egiron
 repo_url: https://github.com/egiron/TemperatureFunct
 repo_name: egiron/TemperatureFunct
+edit_uri: edit/main/docs/
+
+nav:
+  - Home: 
+    - index.md
+    - 'Installation': installation.md
+    - 'Getting Started':
+      - 'Loading dataset and creating a model': getting_started.md
+      - 'Runing models': combinations.md
+      - 'Validating models': evaluating.md
+    # - 'Examples': 'notebooks/Getting_Started.ipynb'
+    - 'Response Functions': 
+      - 'Overview': tfunct.md
+      - 'PRFT': prft.md
+      - 'WEFT': weft.md
+      - 'TPF': tpf.md
+    - 'Data': data.md
+    - 'User Guides': 
+      - 'Estimating Yield using PRFT': 'notebooks/Using PRFT.ipynb'
+      - 'Estimating Yield using WETF': 'notebooks/Using WETF.ipynb'
+      - 'Estimating Yield using TPF': 'notebooks/Using TPF.ipynb'
+      - 'Querying Temperature response functions combinations with precision using DuckDB': querying.md
+    - 'API reference': 
+      - reference/index.md
+      - 'Model': reference/model.md
+      - 'Site': reference/site.md
+      - 'Data': reference/data.md
+      - 'Util': reference/util.md
+  # - 'Installation': installation.md
+  # - 'Getting Started': getting_started.md 
+  # - 'Data': data.md
+  # - 'API reference': reference/index.md
 
 markdown_extensions:
   - pymdownx.caret
@@ -36,10 +68,10 @@ markdown_extensions:
 theme:
   icon:
     repo: fontawesome/brands/git-alt
-  name: material #material #readthedocs
+  name: readthedocs
   # logo: assets/logo_iwin2.png
   # favicon: assets/images/favicon.ico
-  include_homepage_in_sidebar: false
+  # include_homepage_in_sidebar: false
   highlightjs: true
   hijs_languages:
       - python
@@ -65,45 +97,21 @@ theme:
     - content.action.edit
     - content.action.view
   language: en
+  palette:
+    - scheme: default
+      toggle:
+        icon: material/toggle-switch-off-outline
+        name: Switch to dark mode
+    - scheme: slate
+      toggle:
+        icon: material/toggle-switch
+        name: Switch to light mode
   # palette:
   #   primary: black
   #   accent: cyan
   # font:
-  #     text: Google Sans
-  #     code: Regular
-  # font:
   #   text: 'Roboto'
   #   code: 'Roboto Mono'
-nav:
-  - Home: 
-    - index.md
-    - 'Installation': installation.md
-    - 'Getting Started':
-      - 'Loading dataset and creating a model': getting_started.md
-      - 'Runing models': combinations.md
-      - 'Validating models': evaluating.md
-    # - 'Examples': 'notebooks/Getting_Started.ipynb'
-    - 'Response Functions': 
-      - 'Overview': tfunct.md
-      - 'PRFT': prft.md
-      - 'WEFT': weft.md
-      - 'TPF': tpf.md
-    - 'Data': data.md
-    - 'User Guides': 
-      - 'Estimating Yield using PRFT': 'notebooks/Using PRFT.ipynb'
-      - 'Estimating Yield using WETF': 'notebooks/Using WETF.ipynb'
-      - 'Estimating Yield using TPF': 'notebooks/Using TPF.ipynb'
-      - 'Querying Temperature response functions combinations with precision using DuckDB': querying.md
-    - 'API reference': 
-      - reference/index.md
-      - 'Model': reference/model.md
-      - 'Site': reference/site.md
-      - 'Data': reference/data.md
-      - 'Util': reference/util.md
-  # - 'Installation': installation.md
-  # - 'Getting Started': getting_started.md 
-  # - 'Data': data.md
-  # - 'API reference': reference/index.md
 
 extra:
   feature:
