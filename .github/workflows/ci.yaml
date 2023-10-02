@@ -18,6 +18,9 @@ jobs:
         with:
           key: ${{ github.ref }}
           path: .cache
+      - run: pip install mkdocs
+      - run: pip install mkdocstrings
+      - run: pip install 'mkdocstrings[python]'
       - run: pip install mkdocs-material
       - run: pip install mkdocs-autorefs
       - run: pip install mkdocs-jupyter
