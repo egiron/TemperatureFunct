@@ -73,6 +73,7 @@ If a version similar to `tfunct version 1.0.0` is returned, you've installed the
       [Colaboratory]: https://colab.research.google.com/notebooks/welcome.ipynb
       [Jupyter notebook]: https://jupyter.org/
 
+    [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1w2AbbA4NHmU5raYRHexfxfnoybyZ3zRw?usp=sharing)
 ---
 
 Note: this tutorial is also available as a single python notebook. You can download it on Github below:

@@ -1,3 +1,5 @@
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/182tLTa3DzVHb01A-Lsy9PAO49pI2m5G4?usp=sharing)
+
 # Querying Temperature response functions combinations with precision using DuckDB
 
 ## DuckDB
