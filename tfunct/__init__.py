@@ -6,7 +6,7 @@ import warnings
 warnings.simplefilter('ignore')
 warnings.filterwarnings('ignore')
 
-__version__ = "tfunct version 1.0.0"
+__version__ = "tfunct version 1.0.3"
 __author__ = "Azam Lashkari, Urs Christoph Schulthess, Ernesto Giron Echeverry"
 __copyright__ = "Copyright (c) 2023 CIMMYT-Henan Collaborative Innovation Center"
 __license__ = "Public Domain"

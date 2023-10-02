@@ -98,7 +98,7 @@ def chart_compareResults(df_result=None, fld1=None, fld2=None, alpha=.75, s=15, 
     r2score, mape, rmse, n_rmse, d_index, ef, ccc, cb, accuracy = getScores(df, fld1=fld1, fld2=fld2)
     fig, (ax1) = plt.subplots(figsize=(8,6), facecolor='white')
     fig.subplots_adjust(right=0.65)
-    g1 = sns.scatterplot(x=fld1, y=fld2, data=df, alpha=alpha, color="#000000", hue=hue, s=s, lw=0, ax=ax1);
+    g1 = sns.scatterplot(x=fld1, y=fld2, data=df, alpha=alpha, color="#000000", hue=hue, s=s, ax=ax1); # lw=0, depreciated
     ax1.axline((0, 0), slope=1, color='#444', ls="-", linewidth=0.75, zorder=0, label="line 1:1") #c=".5",
     maxlim = int(max(df[fld1].max(), df[fld2].max())) + xy_lim
     g1.set(xlim=(0, maxlim), ylim=(0, maxlim))
@@ -198,7 +198,7 @@ def plot_corrTempFunct(cmb_noStress=None, cmb_noStress_filtered=None, cmb_SFvpd=
         ax.tick_params(labelsize=12)
         g1 = sns.scatterplot(x=fld1, y=fld2, data=df, alpha=alpha, s=s, color="#000000", marker="$\circ$", #ec="face", #markers=mks, #
                              #ci='sd', #err_style='bars',
-                             style=hue, hue=hue, lw=0.6, ax=ax); #size='cycle', style="cycle",
+                             style=hue, hue=hue,  ax=ax); #size='cycle', style="cycle", # lw=0.6, depreciated 
         #g2 = sns.pointplot(x=fld1, y=fld2, data=df, errorbar="ci", capsize=.3, ax=ax) #"ci", errorbar="sd", estimator="median"
         if (errorbar is True):
             ax.errorbar(x=fld1, y=fld2, data=df, xerr="ObsYield_std", yerr='SimYield_std', linestyle='', #fmt=None,
@@ -399,7 +399,7 @@ def plot_TempFunct(fld1='ObsYield',fld2='SimYield',hue='location', ncol=6, s=80,
         ax.tick_params(labelsize=12)
         g1 = sns.scatterplot(x=fld1, y=fld2, data=df, alpha=alpha, s=s, color="#000000", marker="$\circ$", ec="face", #markers=mks, #
                              #ci='sd', #err_style='bars',
-                             style=hue, hue=hue, lw=0.6, ax=ax); #size='cycle', style="cycle",
+                             style=hue, hue=hue, ax=ax); #size='cycle', style="cycle", #lw=0.6, depreciated
         #g2 = sns.pointplot(x=fld1, y=fld2, data=df, errorbar="ci", capsize=.3, ax=ax) #"ci", errorbar="sd", estimator="median"
         if (errorbar is True):
             ax.errorbar(x=fld1, y=fld2, data=df, xerr="ObsYield_std", yerr='SimYield_std', linestyle='', #fmt=None,
@@ -667,7 +667,7 @@ def createFigure_Type_I_PRFT(sites, cmb=None, roundVal=3, maxTDay=50, saveTable=
     #if (verbose):
     print("Calculating average value for all simulations...")
     df_TDays_vs_TempResponse_mean_allSites = pd.DataFrame()
-    sel_cmb_prft = df_TDays_vs_TempResponse.groupby(['TminFactor', 'Topt'], as_index=False).agg('first')
+    sel_cmb_prft = df_TDays_vs_TempResponse.groupby(['TminFactor', 'Topt'], as_index=False).agg({'TempResponse':'mean'})
     for idx in tqdm(sel_cmb_prft.index):
         TminFactor=sel_cmb_prft['TminFactor'][idx]
         Topt=sel_cmb_prft['Topt'][idx]
@@ -703,7 +703,7 @@ def diplay_Figure_Type_I_PRFT_InOneFig(cmb=None, fnct='PRFT', df_tdays=None, df_
         df = df_dailyVals[df_dailyVals['UID']==uid].reset_index(drop=True).sort_values(['TDay'])
         #df = df.drop_duplicates(subset=['TDay', 'TempResponse']) # this produce strange plots
         # Unique combinations by site
-        sel_cmb = df.groupby(['UID', 'TminFactor', 'Topt'], as_index=False).agg({'first'})
+        sel_cmb = df.groupby(['UID', 'TminFactor', 'Topt'], as_index=False).agg({'TempResponse':'mean'})
         # Create figure
         #print("Processing curves for each site...")
         for idx in sel_cmb.index:
@@ -730,7 +730,7 @@ def diplay_Figure_Type_I_PRFT_InOneFig(cmb=None, fnct='PRFT', df_tdays=None, df_
         # Get combinations parameters
         df = df_dailyVals.copy()
         # Unique combinations by site
-        sel_cmb = df.groupby(['TminFactor', 'Topt'], as_index=False).agg({'first'})
+        sel_cmb = df.groupby(['TminFactor', 'Topt'], as_index=False).agg({'TempResponse':'mean'})
         # Create figure
         palette = sns.color_palette("Set1", len(sel_cmb))
         line = itertools.cycle(['-', '--', '-.', ':', 'solid', 'dashed', 'dashdot', 'dotted'])
@@ -1085,7 +1085,7 @@ def createFigure_Type_II_WETF(sites, cmb=None, isVPDStress=False, roundVal=3, ma
         simYield = df2['SimYield'].mean()
         #print("processing {} - {}".format(uid, loc))
         #
-        sel_cmb_wetf = df2.groupby(['UID', 'TminFactor', 'Tmin', 'Topt', 'Tmax'], as_index=False).agg({'first'})
+        sel_cmb_wetf = df2.groupby(['UID', 'TminFactor', 'Tmin', 'Topt', 'Tmax'], as_index=False).agg({'TempResponse':'mean'})
         for idx in sel_cmb_wetf.index:
             uid=sel_cmb_wetf['UID'][idx]
             TminFactor=sel_cmb_wetf['TminFactor'][idx]
@@ -1161,7 +1161,7 @@ def diplay_Figure_Type_II_WETF_InOneFig(cmb=None, fnct='WETF', df_tdays=None, df
         df = df_dailyVals[df_dailyVals['UID']==uid].reset_index(drop=True).sort_values(['TDay'])
         # Unique combinations by site
         # Unique combinations by site
-        sel_cmb = df.groupby(['UID', 'TminFactor', 'Tmin', 'Topt', 'Tmax'], as_index=False).agg({'first'})
+        sel_cmb = df.groupby(['UID', 'TminFactor', 'Tmin', 'Topt', 'Tmax'], as_index=False).agg({'TempResponse':'mean'})
         # Create figure
         #print("Processing curves for each site...")
         for idx in sel_cmb.index:
@@ -1189,7 +1189,7 @@ def diplay_Figure_Type_II_WETF_InOneFig(cmb=None, fnct='WETF', df_tdays=None, df
         # Get combinations parameters
         df = df_dailyVals.copy()
         # Unique combinations by site
-        sel_cmb = df.groupby(['TminFactor', 'Tmin', 'Topt', 'Tmax'], as_index=False).agg({'first'})
+        sel_cmb = df.groupby(['TminFactor', 'Tmin', 'Topt', 'Tmax'], as_index=False).agg({'TempResponse':'mean'})
         # Create figure
         palette = sns.color_palette("Set1", len(sel_cmb))
         line = itertools.cycle(['-', '--', '-.', ':', 'solid', 'dashed', 'dashdot', 'dotted'])
@@ -1535,7 +1535,7 @@ def createFigure_Type_III_TPF(sites, cmb=None, isVPDStress=False, roundVal=3, ma
         #print("processing {} - {}".format(uid, loc))
         #
         sel_cmb_tpf = df2.groupby(['UID', 'TminFactor', 'Tmin', 'Toptmin', 'Toptmax', 'Tmax'], 
-                                  as_index=False).agg({'first'})
+                                  as_index=False).agg({'TempResponse':'mean'})
         for idx in sel_cmb_tpf.index:
             uid=sel_cmb_tpf['UID'][idx]
             TminFactor=sel_cmb_tpf['TminFactor'][idx]
@@ -1617,7 +1617,7 @@ def diplay_Figure_Type_II_TPF_InOneFig(cmb=None, fnct='TPF', df_tdays=None, df_t
         # Get combinations parameters
         df = df_dailyVals[df_dailyVals['UID']==uid].reset_index(drop=True).sort_values(['TDay'])
         # Unique combinations by site
-        sel_cmb = df.groupby(['UID', 'TminFactor', 'Tmin', 'Toptmin', 'Toptmax', 'Tmax'], as_index=False).agg({'first'})
+        sel_cmb = df.groupby(['UID', 'TminFactor', 'Tmin', 'Toptmin', 'Toptmax', 'Tmax'], as_index=False).agg({'TempResponse':'mean'})
         # Create figure
         #print("Processing curves for each site...")
         for idx in sel_cmb.index:
@@ -1647,7 +1647,7 @@ def diplay_Figure_Type_II_TPF_InOneFig(cmb=None, fnct='TPF', df_tdays=None, df_t
         # Get combinations parameters
         df = df_dailyVals.copy()
         # Unique combinations by site
-        sel_cmb = df.groupby(['TminFactor', 'Tmin', 'Toptmin', 'Toptmax', 'Tmax'], as_index=False).agg({'first'})
+        sel_cmb = df.groupby(['TminFactor', 'Tmin', 'Toptmin', 'Toptmax', 'Tmax'], as_index=False).agg({'TempResponse':'mean'})
         # Create figure
         palette = sns.color_palette("Set1", len(sel_cmb))
         line = itertools.cycle(['-', '--', '-.', ':', 'solid', 'dashed', 'dashdot', 'dotted'])

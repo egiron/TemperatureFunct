@@ -3,6 +3,18 @@ hide:
   - navigation
   #- toc
 --- -->
+<!-- <p align="center">
+  <a href="https://pypi.org/project/iwin"><img 
+    src="https://img.shields.io/pypi/v/tfunct.svg" 
+    alt="Python Package Index"
+  /></a>
+  <a href="https://opensource.org/licenses/"><img 
+    src="https://img.shields.io/badge/License-GPL%20v3-yellow.svg" 
+    alt="GPLv3 License"
+  /></a>
+  
+</p> -->
+
 # Getting started
 
 Here we compare three different temperature functions with different cardinal temperature combinations with and without VPD stress function for the period from heading to maturity (grain filling period). 
@@ -57,7 +69,7 @@ If a version similar to `tfunct version 1.0.0` is returned, you've installed the
 
     No install necessary, run the temperature response functions [tutorials] directly in the browser with [Colaboratory], a Google research project created to help disseminate machine learning education and research. It's a [Jupyter notebook] environment that requires no setup to use and runs entirely in the cloud.
 
-      [tutorials]: #
+      [tutorials]: https://colab.research.google.com/drive/1w2AbbA4NHmU5raYRHexfxfnoybyZ3zRw?usp=sharing
       [Colaboratory]: https://colab.research.google.com/notebooks/welcome.ipynb
       [Jupyter notebook]: https://jupyter.org/
 
@@ -65,7 +77,7 @@ If a version similar to `tfunct version 1.0.0` is returned, you've installed the
 
 Note: this tutorial is also available as a single python notebook. You can download it on Github below:
 
-[Download Python Notebook](#){ .md-button .md-button--primary}
+[Download Python Notebook](https://github.com/egiron/TemperatureFunct/blob/main/docs/notebooks/Getting_Started.ipynb){ .md-button .md-button--primary}
 
 Once tfunct library is successfully installed, you can import the essential modules for dataset creation and data pre-processing.
 

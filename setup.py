@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="tfunct",
-    version="1.0.1.dev",
+    version="1.0.3.dev",
     author="Ernesto Giron Echeverry",
     author_email="e.giron.e@gmail.com",
     description="Library for estimating grain yield using temperature response functions",
