@@ -3,15 +3,15 @@
     src="https://img.shields.io/badge/CIMMYT-IWIN-blue"
     alt="CIMMYT IWIN"
   /></a> -->
-  <!-- <a href="https://github.com/egiron/tfunct/actions"><img
-    src="https://github.com/egiron/tfunct/actions/workflows/ci.yaml/badge.svg"
+  <a href="https://github.com/egiron/TemperatureFunct/actions"><img
+    src="https://github.com/egiron/TemperatureFunct/actions/workflows/ci.yaml/badge.svg"
     alt="Build"
-  /></a> -->
+  /></a>
   <!-- <a href="https://pypistats.org/packages/tfunct"><img
     src="https://img.shields.io/pypi/dm/tfunct.svg" 
     alt="Downloads"
   /></a> -->
-  <a href="https://pypi.org/project/iwin"><img 
+  <a href="https://pypi.org/project/tfunct"><img 
     src="https://img.shields.io/pypi/v/tfunct.svg" 
     alt="Python Package Index"
   /></a>
