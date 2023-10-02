@@ -1,33 +1,3 @@
-# Welcome to Temperature Response Functions
-
-This is a small package for estimating wheat yield. it estimates yield under non-stressed and VPD stressed conditions as a function of temperature.
-
-Authors: 
-
-* Azam Lashkari (azam.lashkari@jic.ac.uk)
-* Urs Christoph Schulthess (U.Schulthess@cgiar.org)
-* Ernesto Giron E. - (e.giron.e@gmail.com)
-
-Reference:
-
-* _Azam et al. Searching for optimal temperature response function for grain filling period to simulate wheat yield across the globe. In Press._
-
-
-
-## Quick start
-
-The package for temperature response functions can be installed with `pip`:
-
-``` sh
-pip install tfunct
-```
-
-For detailed installation instructions, configuration options, and a demo, visit
-[installation]
-
-  [installation]: https://egiron.github.io/TemperatureFunct/
-
-
 # License
 
 **MIT License**
@@ -52,6 +22,8 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
 FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS
 IN THE SOFTWARE.
 
+## Data Disclaimer
 
+The data included herein are provided "as is." CIMMYT makes no representation regarding the authenticity, suitability, accuracy, or completeness of any data contained herein. CIMMYT EXPRESSLY DISCLAIMS ANY AND ALL WARRANTIES, INCLUDING WITHOUT LIMITATION, ANY IMPLIED WARRANTIES OR MERCHANTABILITY OR FITNESS FOR A PARTICULAR PURPOSE. In no event shall CIMMYT be liable for any actual, indirect, incidental, consequential, special, or exemplary damages arising from the use and/or reliance on such data.
 
-Copyright (c) 2023 CIMMYT-Henan Collaborative Innovation Center
+[AGREEMENT FOR ACCESS AND USE OF DATA](https://orderseed.cimmyt.org/AGREEMENT_FOR_ACCESS_%20AND_USE_DATA.pdf)
