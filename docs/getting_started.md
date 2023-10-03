@@ -21,12 +21,30 @@ Here we compare three different temperature functions with different cardinal te
 
 ---
 
+## Creating application directory and installing dependencies
+
+Launch your terminal and navigate to your desired location to create the project directory. Run the following commands to create a directory for your project and initialize a grain yield model inside it:
+
+``` sh
+mkdir <`subfolder`>
+cd <`subfolder`>
+```
+
+Create a virtual environment with:
+
+``` sh
+python3 -m venv venv
+```
+!!! Note
+    Please follow the [installation instructions] to complete the steps above according to your local system.
+
+
 ## Setup a folder
 
 Enter a folder or subfolder of your project root where you created the python environment and activate it.
 ``` sh
-cd <`subfolder`>
-. venv/bin/activate
+# cd <`subfolder`>
+source ./venv/bin/activate
 ```
 If you didn't install the `venv` yet, please review the detailed [installation instructions]
 

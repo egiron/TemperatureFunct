@@ -35,7 +35,7 @@ The last generation of [ERA5] global atmospheric reanalysis weather data is used
  [ERA5]: https://cds.climate.copernicus.eu/cdsapp#!/dataset/10.24381/cds.6c68c9bb?tab=overview
 
 
-## Loading datasets using the API
+## Loading data using the API
 
 All of the above data can be loaded and displayed using the library API.
 

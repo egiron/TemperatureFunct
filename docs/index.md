@@ -1,3 +1,5 @@
+![header](./assets/header_tfunct_color.jpg)
+
 <p align="center">
   <!-- <a href="https://orderseed.cimmyt.org/iwin-results.php"><img
     src="https://img.shields.io/badge/CIMMYT-IWIN-blue"
@@ -7,10 +9,10 @@
     src="https://github.com/egiron/TemperatureFunct/actions/workflows/ci.yaml/badge.svg"
     alt="Build"
   /></a>
-  <!-- <a href="https://pypistats.org/packages/tfunct"><img
+  <a href="https://pypistats.org/packages/tfunct"><img
     src="https://img.shields.io/pypi/dm/tfunct.svg" 
     alt="Downloads"
-  /></a> -->
+  /></a>
   <a href="https://pypi.org/project/tfunct"><img 
     src="https://img.shields.io/pypi/v/tfunct.svg" 
     alt="Python Package Index"
@@ -21,6 +23,7 @@
   /></a>
   
 </p>
+
 
 # Welcome to Temperature Response Functions
 

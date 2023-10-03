@@ -42,7 +42,7 @@ con.execute("PRAGMA enable_object_cache")
 
 Now suppose we want to figure out how many rows are in our data set. We can do that using the following code snippets.
 
-### Display the number of combinations in TPF simulations
+### Display the number of combinations in WETF simulations
 ``` python
 print(duckdb.query('''
 SELECT COUNT(*)
