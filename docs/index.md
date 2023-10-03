@@ -31,7 +31,6 @@ This is a small but powerful package for estimating wheat yield under non-stress
 
 We analyse how different temperature functions and VPD thresholds affects non-water stress wheat yield across the International Wheat Improvement Network (IWIN) sites and the other locations across the globe. The code generated using python and R programming languages during the project is published in this repository.
 
-
 Authors: 
 
 * Azam Lashkari (azam.lashkari@jic.ac.uk)
@@ -62,18 +61,24 @@ For detailed instructions of how-to get started, configuration options, and a de
 
 ## Acknowledgements
 
-* **Nieves Aparicio**: _Cereals Group, Section of Herbaceous, Agro-Technological Institute of Castile and León, Junta de Castile and León, Valladolid, Spain_
-* **José Luis Araus**: _Integrative Crop Ecophysiology Group, Section of Plant Physiology, Faculty of Biology, University of Barcelona, Barcelona, and AGROTECNIO-CERCA Center, Lleida, Spain_
-* **Mariano Cossani**: _South Australian Research and Development Institute_
-* **Francisco Pinto Espinosa**: _International Maize and Wheat Improvement Center (CIMMYT), Texcoco, México 56237_
-* **Muhammad Adeel Hassan**: _Institute of Crop Sciences, National Wheat Improvement Centre, Chinese Academy of Agricultural Sciences (CAAS), Beijing, China_
-* **Margaret Kerause**: _Utah State University_
-* **Uttam Kumar**: _Borlaug Institute for South Asia, New Delhi, Delhi, India | International Maize and Wheat Improvement Centre, New Delhi, Delhi, India_
-* **Jesse Poland**: _Department of Plant Pathology, Kansas State University, Manhattan Kansas, USA | Center for Desert Agriculture, King Abdullah University of Science and Technology, Thuwal, Saudi Arabia_
-* **Matthew Reynolds**: _International Maize and Wheat Improvement Center (CIMMYT), Texcoco, México 56237_
-* **Sara Sanjani**: _Seed and Plant Improvement Institute, Karaj, Iran_
-* **Kelly Robert Thorp**: _USDA Agricultural Research Service, U.S. Arid-Land Agricultural Research Center, Maricopa, Arizona_
-* **Haiyan Zhang**: _College of Agronomy, Henan Agricultural University, Zhengzhou, China_
+<p style="font-size: 12px">
+<ul style="font-size: 12px">
+<li><strong>Nieves Aparicio</strong>: <i>Cereals Group, Section of Herbaceous, Agro-Technological Institute of Castile and León, Junta de Castile and León, Valladolid, Spain</i></li>
+<li><strong>José Luis Araus</strong>: <i>Integrative Crop Ecophysiology Group, Section of Plant Physiology, Faculty of Biology, University of Barcelona, Barcelona, and AGROTECNIO-CERCA Center, Lleida, Spain</i></li>
+<li><strong>Mariano Cossani</strong>: <i>South Australian Research and Development Institute</i></li>
+<li><strong>Francisco Pinto Espinosa</strong>: <i>International Maize and Wheat Improvement Center (CIMMYT), Texcoco, México 56237</i></li>
+<li><strong>Muhammad Adeel Hassan</strong>: <i>Institute of Crop Sciences, National Wheat Improvement Centre, Chinese Academy of Agricultural Sciences (CAAS), Beijing, China</i></li>
+<li><strong>Margaret Kerause</strong>: <i>Utah State University</i></li>
+<li><strong>Uttam Kumar</strong>: <i>Borlaug Institute for South Asia, New Delhi, Delhi, India | International Maize and Wheat Improvement Centre, New Delhi, Delhi, India</i></li>
+<li><strong>Jesse Poland</strong>: <i>Department of Plant Pathology, Kansas State University, Manhattan Kansas, USA | Center for Desert Agriculture, King Abdullah University of Science and Technology, Thuwal, Saudi Arabia</i></li>
+<li><strong>Matthew Reynolds</strong>: <i>International Maize and Wheat Improvement Center (CIMMYT), Texcoco, México 56237</i></li>
+<li><strong>Sara Sanjani</strong>: <i>Seed and Plant Improvement Institute, Karaj, Iran</i></li>
+<li><strong>Kelly Robert Thorp</strong>: <i>USDA Agricultural Research Service, U.S. Arid-Land Agricultural Research Center, Maricopa, Arizona</i></li>
+<li><strong>Haiyan Zhang</strong>: <i>College of Agronomy, Henan Agricultural University, Zhengzhou, China</i></li>
+</ul>
+</p>
+
+
 
 
 ## Feedback
