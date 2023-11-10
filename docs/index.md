@@ -39,7 +39,7 @@ Authors:
 
 Reference:
 
-* _**Azam et al., 2023.** Searching for optimal temperature response function for grain filling period to simulate wheat yield across the globe. In Press._
+* _**Lashkari et al., 2023.** Searching for optimal temperature response function for grain filling period to simulate wheat yield across the globe. In Press._
 
 
 ## Quick start
