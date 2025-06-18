@@ -37,7 +37,7 @@ Authors:
 
 Reference:
 
-* _Lashkari et al. Searching for optimal temperature response function for grain filling period to simulate wheat yield across the globe. In Press._
+* _Lashkari et al. Day time temperature and relative humidity have negligible impact on irrigated wheat productivity._
 
 
 
