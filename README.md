@@ -59,7 +59,7 @@ For detailed installation instructions, configuration options, and a demo, visit
 
 **MIT License**
 
-Copyright (c) 2021-2023 
+Copyright (c) 2021-2025 
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to
@@ -81,4 +81,4 @@ IN THE SOFTWARE.
 
 
 
-Copyright (c) 2023 CIMMYT-Henan Collaborative Innovation Center
+Copyright (c) 2025 International Maize and Wheat Improvement Center (CIMMYT)
