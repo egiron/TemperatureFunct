@@ -40,7 +40,7 @@ Authors:
 
 Reference:
 
-* _**Lashkari et al., 2023.** Day time temperature and relative humidity have negligible impact on irrigated wheat productivity._
+* _**Lashkari et al., 2025.** Day time temperature and relative humidity have negligible impact on irrigated wheat productivity._
 
 
 ## Quick start
@@ -96,7 +96,7 @@ Please read out [frequently asked questions](faq.md) before you send an email.
 
 **MIT License**
 
-Copyright (c) 2021-2023 
+Copyright (c) 2021-2025
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to
