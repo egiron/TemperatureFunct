@@ -40,7 +40,7 @@ Authors:
 
 Reference:
 
-* _**Lashkari et al., 2023.** Searching for optimal temperature response function for grain filling period to simulate wheat yield across the globe. In Press._
+* _**Lashkari et al., 2023.** Day time temperature and relative humidity have negligible impact on irrigated wheat productivity._
 
 
 ## Quick start
@@ -129,5 +129,5 @@ IN THE SOFTWARE.
 <p>&nbsp;</p>
 
 
-Copyright (c) 2023 CIMMYT-Henan Collaborative Innovation Center
+Copyright (c) 2025 International Maize and Wheat Improvement Center (CIMMYT)
 
