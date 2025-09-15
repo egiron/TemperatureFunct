@@ -37,7 +37,9 @@ Authors:
 
 Reference:
 
-* _Lashkari et al. Day time temperature and relative humidity have negligible impact on irrigated wheat productivity._
+* _Lashkari et al. Vapor pressure deficit adds little to temperature-based explanations of irrigated wheat yield prediction.
+
+_
 
 
 
