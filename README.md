@@ -37,7 +37,7 @@ Authors:
 
 Reference:
 
-* _Lashkari et al. Vapor pressure deficit adds little to temperature-based explanations of irrigated wheat yield prediction.
+* _Lashkari et al. Does vapor pressure deficit matter for wheat yield simulation under well-watered conditions?.
 
 _
 
